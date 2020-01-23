@@ -1,0 +1,48 @@
+import sys
+import math
+
+def go_left(x,y):
+    return (x-1,y)
+
+def go_right(x,y):
+    return (x+1,y)
+
+def go_down(x,y):
+    return (x,y+1)
+
+def new_pos(room_type, pos):
+    switcher = {
+        '1-RIGHT':go_down,'1-TOP':go_down,'1-LEFT':go_down,
+        '2-RIGHT':go_left,'2-LEFT':go_right,
+        '3-TOP':go_down,
+        '4-TOP':go_left,'4-RIGHT':go_down,
+        '5-TOP':go_right,'5-LEFT':go_down,
+        '6-RIGHT':go_left,'6-LEFT':go_right,
+        '7-TOP':go_down,'7-RIGHT':go_down,
+        '8-RIGHT':go_down,'8-LEFT':go_down,
+        '9-LEFT':go_down,'9-TOP':go_down,
+        '10-TOP':go_left,
+        '11-TOP':go_right,
+        '12-RIGHT':go_down,
+        '13-LEFT':go_down
+    }
+    argument = str(room_type)+'-'+pos
+    return switcher.get(argument)
+
+
+
+# w: number of columns.
+# h: number of rows.
+w, h = [int(i) for i in input().split()]
+lines = [input().split() for _ in range(h)]
+#    line = input()  # represents a line in the grid and contains W integers. Each integer represents one room of a given type.
+ex = int(input())  # the coordinate along the X axis of the exit (not useful for this first mission, but must be read).
+
+# game loop
+while True:
+    xi, yi, pos = input().split()
+    xi = int(xi)
+    yi = int(yi)
+
+    # One line containing the X Y coordinates of the room in which you believe Indy will be on the next turn.
+    print("%d %d"%new_pos(int(lines[yi][xi]),pos)(xi,yi))
