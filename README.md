@@ -11,6 +11,8 @@ C++   [aneo](https://www.codingame.com/training/medium/aneo)
 
 Python  [ThereIsNoSpoon](https://www.codingame.com/training/medium/there-is-no-spoon-episode-1)
 
+Python [theLastCrusadeEp1](https://www.codingame.com/training/medium/the-last-crusade-episode-1)
+
 
 - hard puzzles
 
