@@ -13,9 +13,15 @@ Python  [ThereIsNoSpoon](https://www.codingame.com/training/medium/there-is-no-s
 
 Python [theLastCrusadeEp1](https://www.codingame.com/training/medium/the-last-crusade-episode-1)
 
+Typescript [TelephoneNumbers](https://www.codingame.com/training/medium/telephone-numbers)
+
+Typescript [DontPanic1](https://www.codingame.com/training/medium/don't-panic-episode-1)
 
 - hard puzzles
 
 C++   [TheLabyrinth](https://www.codingame.com/training/hard/the-labyrinth)
 
 C++/Python  [surface](https://www.codingame.com/training/hard/surface)
+
+Typescript [DontPanic2](https://www.codingame.com/training/hard/don't-panic-episode-2)
+
